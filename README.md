@@ -1,6 +1,6 @@
 ##GitHubでのLaTexの実験
 
-\\\\は使用できずspace２つで代用
+\\\\は使用できずspace２つで代用 それ以外はほぼ同じ
   
 $$
 \frac{\partial}{\partial v}( \frac{1}{2} \sum_{i=1}^n (y_{(i)} - v)^2
