@@ -1,0 +1,35 @@
+create database aws2;
+
+\connect aws2
+
+
+
+CREATE TABLE m_item
+(id INTEGER,
+cd_item text NOT NULL,
+name TEXT,
+PRIMARY KEY (id));
+
+
+CREATE TABLE m_inventory
+(id INTEGER,
+cd_item text NOT NULL,
+count INTEGER,
+total_count INTEGER,
+total_price INTEGER,
+PRIMARY KEY (id));
+
+CREATE TABLE t_inventory
+(id INTEGER,
+type CHAR(1) NOT NULL,
+cd_item text NOT NULL,
+date CHAR(8) NOT NULL,
+count INTEGER,
+price INTEGER,
+PRIMARY KEY (id));
+
+
+
+insert into m_item values(1, 111, '商品1');
+
+select * from m_item;
